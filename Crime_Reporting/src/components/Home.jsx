@@ -6,12 +6,8 @@ import Form from './Form'
 
 const Home = () => {
   return (
-    
     <div>  
-    <Banner />
-        {/* <Reports/>      */}
         <LandingPage/>
-        {/* <Form /> */}
     </div>
   )
 }

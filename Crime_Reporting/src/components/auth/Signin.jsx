@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SignInwithGoogle from "./SigninWithGoogle";
+import Banner from "../Banner";
 
 const Signin = () => {
   const email = useRef(null);
@@ -35,6 +36,8 @@ const Signin = () => {
   }
 
   return (
+    <>
+      <Banner/>
     <div className="flex items-center justify-center min-h-screen bg-gray-100 py-6 px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
         <h2 className="text-3xl font-semibold text-center text-gray-900 mb-6">
@@ -68,7 +71,7 @@ const Signin = () => {
             <input
               type="submit"
               value="Sign In"
-              className="w-full p-3 bg-indigo-600 text-white font-semibold rounded-md shadow-md hover:bg-indigo-700 transition duration-200"
+              className="w-full p-3 cursor-pointer bg-indigo-600 text-white font-semibold rounded-md shadow-md hover:bg-indigo-700 transition duration-200"
             />
           </div>
         </form>
@@ -83,6 +86,7 @@ const Signin = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 

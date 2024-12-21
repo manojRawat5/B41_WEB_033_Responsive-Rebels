@@ -59,6 +59,9 @@ const RecentReports = () => {
               <p className="mt-4 text-base text-gray-600">
                 <strong>Description:</strong> {report.description}
               </p>
+              <p className="mt-4 text-base text-gray-600">
+                <strong>Status:</strong> {report.status}
+              </p>
             </div>
           ))}
         </div>

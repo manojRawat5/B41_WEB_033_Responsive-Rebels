@@ -1,8 +1,7 @@
 import React from 'react';
 
-// Function to generate a random count for the reports
 const generateRandomCount = () => {
-  return Math.floor(Math.random() * 1000); // Random number between 0 and 1000
+  return Math.floor(Math.random() * 1000); 
 };
 
 const Category = () => {

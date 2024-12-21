@@ -1,14 +1,15 @@
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "./firebase";
+import { Link, useNavigate } from "react-router-dom";
 
 function SignInwithGoogle() {
+    const navigate = useNavigate();
     function googleLogin() {
       const provider = new GoogleAuthProvider();
       signInWithPopup(auth, provider).then(async (result) => {
-        // console.log(result);
         const user = result.user;
         if (result.user) {
-          alert('Sign in successfull')
+          navigate('/after-login')
           localStorage.setItem('idToken','true')
           window.location.href = "/";
         }
