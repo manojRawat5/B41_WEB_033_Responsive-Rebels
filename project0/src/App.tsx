@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Users, Shield, BookOpen, Building2, ArrowRight, ChevronRight } from 'lucide-react';
 
 function App() {
